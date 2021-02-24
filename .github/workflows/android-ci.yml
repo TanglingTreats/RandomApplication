@@ -18,4 +18,4 @@ jobs:
           npm install
           export GRADLE_USER_HOME=`pwd`./.gradle
           chmod 755 ./gradlew 
-          ./gradlew -p ./src check
+          ./gradlew -p ./ check
