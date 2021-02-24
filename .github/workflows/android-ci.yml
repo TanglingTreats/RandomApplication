@@ -19,3 +19,7 @@ jobs:
           export GRADLE_USER_HOME=`pwd`./.gradle
           chmod 755 ./gradlew 
           ./gradlew -p ./ check
+          
+    - name: Docker Extract
+      uses: TanglingTreats/android-docker-lint@v1
+
