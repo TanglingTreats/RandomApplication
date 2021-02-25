@@ -29,5 +29,5 @@ jobs:
     - name: Download file with actions
       uses: actions/download-artifact@v2
       with:
-        name: actions-output-file
+        name: lint_output.html
 
