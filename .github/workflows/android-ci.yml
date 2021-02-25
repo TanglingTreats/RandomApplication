@@ -20,6 +20,6 @@ jobs:
           chmod 755 ./gradlew 
           ./gradlew -p ./ check
           
-    - name: Docker Extract
-      uses: TanglingTreats/android-docker-lint@v1
+    - name: Get lint output
+      run: echo /github/workspace/app/build/reports/lint-results.xml
 
