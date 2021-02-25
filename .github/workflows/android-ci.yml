@@ -22,4 +22,9 @@ jobs:
           
     - name: Get lint output
       uses: TanglingTreats/android-docker-lint@v2.3
+      
+    - name: Download file with actions
+      uses: actions/download-artifact@v2
+      with:
+        name: actions-output-file
 
