@@ -21,5 +21,7 @@ jobs:
           ./gradlew -p ./ check
           
     - name: Get lint output
-      run: echo /github/workspace/app/build/reports/lint-results.xml
+      run: echo $LINT_PATH
+      env:
+        LINT_PATH: /github/workspace/app/build/reports/lint-results.xml
 
