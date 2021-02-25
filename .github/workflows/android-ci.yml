@@ -20,11 +20,14 @@ jobs:
           chmod 755 ./gradlew 
           ./gradlew -p ./ check
           
+    - name: Generate output file
+      uses: TanglingTreats/android-docker-lint@v2.4
+          
     - name: Upload lint output
       uses: actions/upload-artifact@v1
       with:
         name: lint_output.html
-        path: /github/workspace/app/build/reports/lint-results.html
+        path: lint-results.html
       
     - name: Download file with actions
       uses: actions/download-artifact@v2
