@@ -28,9 +28,4 @@ jobs:
       with:
         name: lint_output.html
         path: lint-results.html
-      
-    - name: Download file with actions
-      uses: actions/download-artifact@v2
-      with:
-        name: lint_output.html
 
