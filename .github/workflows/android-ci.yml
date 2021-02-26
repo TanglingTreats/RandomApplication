@@ -30,7 +30,7 @@ jobs:
         path: lint-results.html
     
     - name: Own lint results
-      run: sh -c "chown -R $USER lint_output.html"
+      run: sh -c "chown -R $USER ./lint-results.html"
         
     - name: Download lint results
       uses: actions/download-artifact@v2
