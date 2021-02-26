@@ -28,12 +28,4 @@ jobs:
       with:
         name: lint_output.html
         path: lint-results.html
-    
-    - name: Own lint results
-      run: sh -c "sudo chown -R $USER ./lint-results.html"
-        
-    - name: Download lint results
-      uses: actions/download-artifact@v2
-      with:
-        name: lint_output.html
 
