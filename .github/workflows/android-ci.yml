@@ -21,7 +21,7 @@ jobs:
           ./gradlew -p ./ check
           
     - name: Generate output file
-      uses: TanglingTreats/android-docker-lint@v2.7
+      uses: TanglingTreats/android-docker-lint@v2.8
           
     - name: Upload lint output
       uses: actions/upload-artifact@v1
